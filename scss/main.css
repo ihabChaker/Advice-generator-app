@@ -121,14 +121,14 @@ h6 {
 }
 
 .advice__devider {
-  background-image: url(./../../images/pattern-divider-mobile.svg);
+  background-image: url(../../images/pattern-divider-mobile.svg);
   background-size: cover;
   background-position: center;
   height: 14px;
 }
 @media screen and (min-width: 800px) {
   .advice__devider {
-    background-image: url(./../../images/pattern-divider-desktop.svg);
+    background-image: url(../../images/pattern-divider-desktop.svg);
   }
 }
 
