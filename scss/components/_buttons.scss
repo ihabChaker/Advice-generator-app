@@ -1,0 +1,18 @@
+.advice__new-advice-btn {
+    max-width: 80px;
+    position: absolute;
+    bottom: 0;
+
+    padding: 20px;
+
+    background-color: $neon-green;
+
+    border: 0;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: all 0.4s;
+    &:active {
+        transform: translate(-50%, 50%) scale(0.8);
+    }
+}

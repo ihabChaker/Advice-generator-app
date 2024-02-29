@@ -1,0 +1,39 @@
+.advice {
+    background-color: $dark-grayish-blue;
+    max-width: 55rem;
+    @media screen and (min-width: 800px) {
+        max-width: initial;
+        width: 55rem;
+    }
+    padding: 4rem;
+    padding-bottom: 6rem;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    border-radius: 1.5rem;
+    position: relative;
+}
+.advice__text {
+    color: $light-cyan;
+    &::before {
+        content: open-quote;
+    }
+    &::after {
+        content: close-quote;
+    }
+}
+.advice__id {
+    color: $neon-green;
+}
+.advice__devider {
+    background-image: url(./../../images/pattern-divider-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    height: 14px;
+    @media screen and (min-width: 800px) {
+        background-image: url(./../../images/pattern-divider-desktop.svg);
+    }
+}

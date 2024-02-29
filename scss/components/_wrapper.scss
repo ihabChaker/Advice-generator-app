@@ -1,0 +1,9 @@
+.wrapper {
+    background-color: $dark-blue;
+    display: grid;
+    place-content: center;
+    padding-inline: 2rem;
+    @media screen and (min-width: 640px) {
+        padding-inline: 0;
+    }
+}

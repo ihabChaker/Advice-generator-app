@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+[class*=sr-only] {
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.advice__text {
+  font-size: 2.8rem;
+}
+
+.advice__id {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+}
+
+.wrapper {
+  background-color: hsl(218, 23%, 16%);
+  display: grid;
+  place-content: center;
+  padding-inline: 2rem;
+}
+@media screen and (min-width: 640px) {
+  .wrapper {
+    padding-inline: 0;
+  }
+}
+
+.advice {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 55rem;
+  padding: 4rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  .advice {
+    max-width: initial;
+    width: 55rem;
+  }
+}
+
+.advice__text {
+  color: hsl(193, 38%, 86%);
+}
+.advice__text::before {
+  content: open-quote;
+}
+.advice__text::after {
+  content: close-quote;
+}
+
+.advice__id {
+  color: hsl(150, 100%, 66%);
+}
+
+.advice__devider {
+  background-image: url(./../../images/pattern-divider-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  height: 14px;
+}
+@media screen and (min-width: 800px) {
+  .advice__devider {
+    background-image: url(./../../images/pattern-divider-desktop.svg);
+  }
+}
+
+.advice__new-advice-btn {
+  max-width: 80px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background-color: hsl(150, 100%, 66%);
+  border: 0;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: all 0.4s;
+}
+.advice__new-advice-btn:active {
+  transform: translate(-50%, 50%) scale(0.8);
+}
+
+/*# sourceMappingURL=main.css.map */
